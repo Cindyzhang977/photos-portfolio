@@ -363,36 +363,6 @@ function checkLogin() {
     });
 }
 
-// ref: https://getbootstrap.com/docs/4.0/components/modal/#varying-modal-content
-$('#map-modal').on('show.bs.modal', function (event) {
-  // button that triggered show modal event
-  const button = $(event.relatedTarget);
-
-  // get data passed by the button
-  const location = button.data('location');
-  const lat = button.data('lat');
-  const lng = button.data('lng');
-
-  // set content of modal based on the button pressed
-  const modal = $(this);
-  modal.find('.modal-title').text(location);
-  initMap(lat, lng);
-});
-
-/**
- * use Google maps API to create a map with a marker at the given coordinates
- * @param {number} latitude
- * @param {number} longitude
- */
-function initMap(latitude, longitude) {
-  const location = { lat: latitude, lng: longitude };
-  const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
-    center: location,
-  });
-  const marker = new google.maps.Marker({ position: location, map });
-}
-
 $(document).ready(() => {
   generatePhotoComponents();
   mapPhotos();

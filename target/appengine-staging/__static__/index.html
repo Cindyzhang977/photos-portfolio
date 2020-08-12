@@ -61,7 +61,7 @@
       <div class="container" id="gallery-container">
         <div class="container">
           <!-- filter & sort features -->
-          <div class="row">
+          <div class="row" style="display: none;">
             <div
               class="btn-group btn-group-toggle sort-toggle"
               data-toggle="buttons"
@@ -94,44 +94,6 @@
           </div>
         </div>
         <!-- gallery -->
-        <div
-          class="modal fade"
-          id="map-modal"
-          tabindex="-1"
-          role="dialog"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog modal-dialog-centered modal-lg"
-            role="document"
-          >
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="map-modal-title"></h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div id="map"></div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row" id="gallery">
           <div class="row text-center align-items-center loading-container">
             <div class="spinner-border" role="status">
@@ -238,7 +200,7 @@
                   class="form-control"
                   id="inlineFormInputGroupLink"
                   name="link"
-                  placeholder="Link"
+                  placeholder="Link (map, photos, website, etc.)"
                 />
               </div>
             </div>
@@ -317,11 +279,6 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWGV5BaNcggJUx4kIXP7OnCO9RgtrwVvM"
-      type="text/javascript"
     ></script>
   </body>
 </html>
