@@ -69,18 +69,6 @@ a:hover {
   color: inherit;
 }
 
-/* map modal */
-
-#map {
-  height: 500px;
-  margin: auto;
-  width: 90%;
-}
-
-#map-modal-title {
-  color: var(--navy);
-}
-
 /* gallery */
 
 .filter-dropdown > .btn,
@@ -163,7 +151,7 @@ a:hover {
   opacity: 0.5;
 }
 
-.view-map-btn {
+.city {
   color: white;
   border-color: white;
   left: 50%;

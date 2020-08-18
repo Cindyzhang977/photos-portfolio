@@ -43,9 +43,9 @@ function createPhoto(photo) {
             alt="${photo.location}"
           />
           <div class="overlay">
-            <div class="view-map-btn">
+            <div class="city">
               ${photo.city}
-            </dix>
+            </div>
           </div>
         </div>
         <div class="row figure-caption-container">

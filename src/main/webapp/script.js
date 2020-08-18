@@ -45,7 +45,7 @@ function createPhoto(photo) {
           <div class="overlay">
             <div class="city">
               ${photo.city}
-            </dix>
+            </div>
           </div>
         </div>
         <div class="row figure-caption-container">
