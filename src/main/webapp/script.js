@@ -43,18 +43,9 @@ function createPhoto(photo) {
             alt="${photo.location}"
           />
           <div class="overlay">
-            <button 
-              type="button" 
-              id="btn-${photo.epoch}" 
-              class="btn btn-outline-secondary view-map-btn"
-              data-toggle="modal" 
-              data-target="#map-modal" 
-              data-location="${photo.location}"
-              data-lat="${photo.lat}"
-              data-lng="${photo.lng}"
-            >
-              View Map
-            </button>
+            <div class="city">
+              ${photo.city}
+            </dix>
           </div>
         </div>
         <div class="row figure-caption-container">
